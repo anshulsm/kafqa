@@ -1,0 +1,27 @@
+# application.yml
+
+server:
+  port: 7808
+
+broker:
+  # How many times to retry delivering a message before sending it to the dead?letter list
+  maxRetries: 3
+
+# Spring Boot Actuator (health + metrics)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+  endpoint:
+    health:
+      show-details: always
+
+# (Optional) JSON date formatting
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  application:
+    name: kafqa
+
