@@ -66,5 +66,5 @@ This mimics the high-throughput, thread-safe design of real brokers.
 1. **Clone & build**
    ```bash
    git clone https://github.com/Anshul140/message-broker.git
-   cd kafqa-broker
+   cd kafqa
    mvn clean package
